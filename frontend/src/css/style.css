@@ -10,6 +10,9 @@
   padding: 0;
   margin: 0;
 }
+body {
+  background-color: rgb(201, 201, 236);
+}
 .motto {
   overflow: visible;
 }
@@ -35,17 +38,15 @@ h2 {
 }
 
 .logo {
-  font-weight: bold;
-}
-
-p {
-  margin: 10px 0;
 }
 
 img {
   width: 100%;
 }
-
+.showcase-text img {
+  width: 100px;
+  height: 90px;
+}
 /* Navbar */
 .navbar {
   background-color: var(--primary-color);
@@ -68,9 +69,17 @@ img {
 }
 
 .navbar .flex {
+  overflow: hidden;
   justify-content: space-between;
 }
+li a:hover:not(.active) {
+  opacity: 0.3;
+}
 
+.active {
+  background-color: #6b69e9;
+  border-radius: 5px;
+}
 #login {
   display: inline;
   padding: 10px 30px;
@@ -86,7 +95,7 @@ img {
 }
 
 .showcase {
-  height: 700px;
+  height: 675px;
   background-color: var(--primary-color);
   color: white;
   position: relative;
@@ -374,7 +383,7 @@ img {
   font-size: 25px;
   width: 55px;
   position: center;
-  background: indianred;
+  background: rgb(92, 145, 205);
   color: white;
   text-align: center;
   text-decoration: none;
@@ -404,6 +413,24 @@ img {
   text-align: center;
 }
 
+.mission h1 {
+  margin-left: 30px;
+  text-align: center;
+  font-weight: 800;
+}
+input {
+  color: white;
+  background-color: transparent;
+}
+.text p {
+  margin-left: 30px;
+}
+p {
+  margin: 10px 0;
+  margin-left: 30px;
+  font-weight: 800;
+  text-align: center;
+}
 .footer li {
   display: inline;
 }
@@ -418,3 +445,31 @@ img {
   display: flex;
 }
 */
+
+table,
+th,
+td {
+  border: 3px solid rgb(6, 27, 121);
+  height: 20px;
+  width: 20px;
+  padding: 10px;
+  margin: 20px;
+  margin-right: -90px;
+  padding-right: -90px;
+  text-align: center;
+  color: rgb(236, 246, 255);
+  font-weight: 900;
+  background-color: rgb(130, 130, 233);
+  overflow: hidden;
+}
+th {
+  background-color: rgb(97, 97, 241);
+}
+
+table {
+  font-size: 14px;
+  border-collapse: collapse;
+}
+.long {
+  width: 1000px;
+}
