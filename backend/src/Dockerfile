@@ -9,4 +9,6 @@ WORKDIR /src
 COPY . /src
 RUN pip --no-cache-dir install -r requirements.txt
 
+EXPOSE 8080
+
 CMD ["python3", "app.py"]
