@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Title</title>
+    <script src='calendar.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container flex">
+        <h1 class="logo"><a href="index.html">Caminder</a></h1>
+        <nav>
+          <ul id="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="calendar.html">Schedule</a></li>
+            <li><a href="dailytasks.html">Daily Schedule</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a id="login" href="login.html">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <p>Student's Weekly Calendar.</p>
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>
+          
+            <span class="long">Monday</span>
+            
+          </th>
+          <th>
+            
+            <span class="long">Tuesday</span>
+            
+          </th>
+          <th>
+            
+            <span class="long">Wednesday</span>
+           
+          </th>
+          <th>
+            
+            <span class="long">Thursday</span>
+         
+          </th>
+          <th>
+            
+            <span class="long">Friday</span>
+           
+          </th>
+          <th>
+           
+            <span class="long">Saturday</span>
+            
+          </th>
+          <th>
+           
+            <span class="long">Sunday</span>
+          
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="hour" rowspan="4"><span>3 PM</span></td>
+          
+        </tr>
+        <tr>
+            <td> <label for="task">Enter Task:</label>
+                <br>
+                
+                <input type="text" id="task" name="task"><br>
+                <input type="submit" value="Submit">
+            </td>
+                
+            <td>Review for History Quiz <br></br><input type="submit" value="Edit"></td>
+            <td>English Homework<br></br><input type="submit" value="Edit"></td>
+            <td>Walk Outside<br></br><input type="submit" value="Edit"></td>
+            <td>Study for Chemistry Test<br></br><input type="submit" value="Edit"></td>
+            <td>Java Quizlet<br></br><input type="submit" value="Edit"></td>
+            <td><label for="task">Enter Task:</label>
+                <br>
+                
+                <input type="text" id="task" name="task"><br>
+                <input type="submit" value="Submit"></td>
+          </tr>
+          <tr>
+            
+          </tr>
+       
+        <tr>
+          <td><label for="task">Enter Task:</label>
+            <br>
+            
+            <input type="text" id="task" name="task"><br>
+            <input type="submit" value="Submit"></td>
+          <td>Facetime a Friend<br></br><input type="submit" value="Edit"></td>
+          <td>Study for Calc Test<br></br><input type="submit" value="Edit"></td>
+          <td><label for="task">Enter Task:</label>
+            <br>
+            
+            <input type="text" id="task" name="task"><br>
+            <input type="submit" value="Submit"></td>
+          <td>Tae Kwon Do<br></br><input type="submit" value="Edit"></td>
+          <td>Piano Class<br></br><input type="submit" value="Edit"></td>
+          <td>Edit Website<br></br><input type="submit" value="Edit"></td>
+        </tr>
+        <tr>
+          <td class="hour" rowspan="4"><span>4 PM</span></td>
+          
+        </tr>
+        <tr>
+          <td>Long Run<br></br><input type="submit" value="Edit"></td>
+          <td>Jog<br></br><input type="submit" value="Edit"></td>
+          <td>Sprints<br></br><input type="submit" value="Edit"></td>
+          <td>Jog<br></br><input type="submit" value="Edit"></td>
+          <td>Long Run<br></br><input type="submit" value="Edit"></td>
+          <td>Piano Class<br></br><input type="submit" value="Edit"></td>
+          <td>Costco Shopping<br></br><input type="submit" value="Edit"></td>
+        </tr>
+        
+        <tr>
+          
+         
+          </tr>
+          <tr>
+            <td>Eat a Peanut Butter and Jelly Sandwich<br></br><input type="submit" value="Edit"></td>
+            <td>Make and Drink a Banana Strawberry Smoothie<br></br><input type="submit" value="Edit"></td>
+            <td><label for="task">Enter Task:</label>
+                <br>
+                
+                <input type="text" id="task" name="task"><br>
+                <input type="submit" value="Submit"></td>
+            <td>Eat Pasta<br></br><input type="submit" value="Edit"></td>
+            <td>Eat Yogurt and Granola<br></br><input type="submit" value="Edit"></td>
+            <td><label for="task">Enter Task:</label>
+                <br>
+                
+                <input type="text" id="task" name="task"><br>
+                <input type="submit" value="Submit"></td>
+            <td>Costco Shopping<br></br><input type="submit" value="Edit"></td>
+          </tr>
+        
+        <tr>
+          <td class="hour" rowspan="4"><span>5 PM</span></td>
+         
+        </tr>
+        
+        
+        <tr>
+          <td><label for="task">Enter Task:</label>
+            <br>
+            
+            <input type="text" id="task" name="task"><br>
+            <input type="submit" value="Submit"></td></td>
+          <td><label for="task">Enter Task:</label>
+            <br>
+            
+            <input type="text" id="task" name="task"><br>
+            <input type="submit" value="Submit"></td></td>
+          <td>Watch Biology Lecture<br></br><input type="submit" value="Edit"></td>
+          <td><label for="task">Enter Task:</label>
+            <br>
+            
+            <input type="text" id="task" name="task"><br>
+            <input type="submit" value="Submit"></td>
+          <td><label for="task">Enter Task:</label>
+            <br>
+            
+            <input type="text" id="task" name="task"><br>
+            <input type="submit" value="Submit"></td></td>
+          <td>Watch Math Lecture<br></br><input type="submit" value="Edit"></td>
+          <td><label for="task">Enter Task:</label>
+            <br>
+            
+            <input type="text" id="task" name="task"><br>
+            <input type="submit" value="Submit"></td>
+        </tr>
+        <tr>
+            <td><label for="task">Enter Task:</label>
+                <br>
+                
+                <input type="text" id="task" name="task"><br>
+                <input type="submit" value="Submit"></td>
+            <td>Read Animal Farm<br></br><input type="submit" value="Edit"></td>
+            <td><label for="task">Enter Task:</label>
+                <br>
+                
+                <input type="text" id="task" name="task"><br>
+                <input type="submit" value="Submit"></td>
+            <td>Read Animal Farm<br></br><input type="submit" value="Edit"></td>
+            <td>Read Animal Farm<br></br><input type="submit" value="Edit"></td>
+            <td>Watch Youtube<br></br><input type="submit" value="Edit"></td>
+            <td><label for="task">Enter Task:</label>
+                <br>
+                
+                <input type="text" id="task" name="task"><br>
+                <input type="submit" value="Submit"></td>
+          </tr>
+          <tr>
+           
+          </tr>
+        <tr>
+          <td class="hour" rowspan="4"><span>6 PM</span></td>
+         
+        </tr>
+        
+        
+        <tr>
+          <td><label for="task">Enter Task:</label>
+            <br>
+            
+            <input type="text" id="task" name="task"><br>
+            <input type="submit" value="Submit"></td>
+          <td>Watch Youtube<br></br><input type="submit" value="Edit"></td>
+          <td>Read Animal Farm<br></br><input type="submit" value="Edit"></td>
+          <td><label for="task">Enter Task:</label>
+            <br>
+            
+            <input type="text" id="task" name="task"><br>
+            <input type="submit" value="Submit"></td>
+          <td>Finish Java Homework<br></br><input type="submit" value="Edit"></td>
+          <td>Finish Chemistry Homework<br></br><input type="submit" value="Edit"></td>
+          <td><label for="task">Enter Task:</label>
+            <br>
+            
+            <input type="text" id="task" name="task"><br>
+            <input type="submit" value="Submit"></td>
+        </tr>
+        <tr>
+            
+          </tr>
+          <tr>
+            <td>Watch Youtube<br></br><input type="submit" value="Edit"></td>
+            <td>Edit Website<br></br><input type="submit" value="Edit"></td>
+            <td><label for="task">Enter Task:</label>
+                <br>
+                
+                <input type="text" id="task" name="task"><br>
+                <input type="submit" value="Submit"></td>
+            <td>Listen to Music<br></br><input type="submit" value="Edit"></td>
+            <td>Rest<br></br><input type="submit" value="Edit"></td>
+            <td>Walk Outside<br></br><input type="submit" value="Edit"></td>
+            <td>Walk Inside (Snowing)<br></br><input type="submit" value="Edit"></td>
+          </tr>
+        <tr>
+          <td class="hour" rowspan="4"><span>7 PM</span></td>
+         
+        </tr>
+        
+        <tr>
+            
+        </tr>
+          <tr>
+            <td>Dinner<br></br><input type="submit" value="Edit"></td>
+            <td>Dinner<br></br><input type="submit" value="Edit"></td>
+            <td>Dinner<br></br><input type="submit" value="Edit"></td>
+            <td>Dinner<br></br><input type="submit" value="Edit"></td>
+            <td>Dinner<br></br><input type="submit" value="Edit"></td>
+            <td>Dinner<br></br><input type="submit" value="Edit"></td>
+            <td>Dinner<br></br><input type="submit" value="Edit"></td>
+          </tr>
+       
+        <tr>
+            <td>Dinner<br></br><input type="submit" value="Edit"></td>
+            <td>Dinner<br></br><input type="submit" value="Edit"></td>
+            <td>Dinner<br></br><input type="submit" value="Edit"></td>
+            <td>Dinner<br></br><input type="submit" value="Edit"></td>
+            <td>Dinner<br></br><input type="submit" value="Edit"></td>
+            <td>Dinner<br></br><input type="submit" value="Edit"></td>
+            <td>Dinner<br></br><input type="submit" value="Edit"></td>
+        </tr>
+        <tr>
+          <td class="hour" rowspan="4"><span>8 PM</span></td>
+         
+        </tr>
+        <tr>
+            
+        </tr>
+        <tr>
+            <td>Practice Bach<br></br><input type="submit" value="Edit"></td>
+            <td>Practice Beethoven<br></br><input type="submit" value="Edit"></td>
+            <td>Practice Schumann<br></br><input type="submit" value="Edit"></td>
+            <td>Practice Prokofiev<br></br><input type="submit" value="Edit"></td>
+            <td>Practice Bach<br></br><input type="submit" value="Edit"></td>
+            <td>Practice Beethoven<br></br><input type="submit" value="Edit"></td>
+            <td>Practice Schumann<br></br><input type="submit" value="Edit"></td>
+          </tr>
+         
+          <tr>
+            <td>Practice Bach<br></br><input type="submit" value="Edit"></td>
+            <td>Practice Beethoven<br></br><input type="submit" value="Edit"></td>
+            <td>Practice Schumann<br></br><input type="submit" value="Edit"></td>
+            <td>Practice Prokofiev<br></br><input type="submit" value="Edit"></td>
+            <td>Practice Bach<br></br><input type="submit" value="Edit"></td>
+            <td>Practice Beethoven<br></br><input type="submit" value="Edit"></td>
+            <td>Practice Schumann<br></br><input type="submit" value="Edit"></td>
+          </tr>
+        <tr>
+          
+          <td class="hour" rowspan="4"><span>10 PM</span></td>
+         
+        </tr>
+        
+        <tr>
+          <td>Last Minute Chemistry Homework<br></br><input type="submit" value="Edit"></td>
+          <td>Last Minute Java Homework<br></br><input type="submit" value="Edit"></td>
+          <td><label for="task">Enter Task:</label>
+            <br>
+            
+            <input type="text" id="task" name="task"><br>
+            <input type="submit" value="Submit"></td>
+          <td>Last Minute Biology Homework<br></br><input type="submit" value="Edit"></td>
+          <td>Watch Spiderman<br></br><input type="submit" value="Edit"></td>
+          <td>Last Minute History Homework<br></br><input type="submit" value="Edit"></td>
+          <td>Record Piano Video<br></br><input type="submit" value="Edit"></td>
+        </tr>
+        <tr>
+            
+          </tr>
+          <tr>
+           
+          </tr>
+        <tr>
+            <td class="hour" rowspan="4"><span>11 PM</span></td>
+            
+          </tr>
+          <tr>
+            <td>Last Minute Chemistry Homework<br></br><input type="submit" value="Edit"></td>
+            <td>Last Minute Java Homework<br></br><input type="submit" value="Edit"></td>
+            <td><label for="task">Enter Task:</label>
+              <br>
+              
+              <input type="text" id="task" name="task"><br>
+              <input type="submit" value="Submit"></td>
+            <td>Last Minute Biology Homework<br></br><input type="submit" value="Edit"></td>
+            <td>Watch Spiderman<br></br><input type="submit" value="Edit"></td>
+            <td>Last Minute History Homework<br></br><input type="submit" value="Edit"></td>
+            <td>Record Piano Video<br></br><input type="submit" value="Edit"></td>
+          </tr>
+          <tr>
+            <td>Pack backpack<br></br><input type="submit" value="Edit"></td>
+            <td>Pack backpack<br></br><input type="submit" value="Edit"></td>
+            <td>Pack backpack<br></br><input type="submit" value="Edit"></td>
+            <td>Pack backpack<br></br><input type="submit" value="Edit"></td>
+            <td>Watch Spiderman<br></br><input type="submit" value="Edit"></td>
+            <td>Play Card Game with Grandparents<br></br><input type="submit" value="Edit"></td>
+            <td>Pack backpack<br></br><input type="submit" value="Edit"></td>
+          </tr>
+          
+          
+          <tr>
+           
+          </tr>
+      </tbody>
+    </table>
+    <section class="footer">
+        <p>Visit or Contact Us on Social Media </p>
+        <a href="mailto:contact@caminder.org" target="_blank" class="fa fa-envelope"></a>
+ 
+        <li><a href="https://twitter.com/Namely29552525" target="_blank" class="fa fa-twitter"></a></li>
+        <p>© Copyright 2022 | Caminder</p>
+    </section>
+  </body>
+</html>
