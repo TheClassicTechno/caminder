@@ -41,7 +41,7 @@ class timeslotlist():
         finalRanks = sorted(topthirdranked, key=lambda x: x.duration)
         return finalRanks[0]
 
-listOfSlots = [timeslot("1:15 am", "2:45 am"), timeslot("4:30 am", "6:00 am"), timeslot("7:15 am", "8:30 am"), timeslot("9:25 am", "10:00 am"), timeslot("10:10 am", "11:45 am"), timeslot("1:30 pm", "2:45 pm"), timeslot("3:15 pm", "3:45 pm"), timeslot("5:00 pm", "5:15 pm"), timeslot("9:10 pm", "9:11 pm"), timeslot("11:23 pm", "11:59 pm")]
-kekw = timeslotlist(listOfSlots)
-
-print(kekw.bestOption().time1)
+if(__name__ == '__main__'):
+    listOfSlots = [timeslot("1:15 am", "2:45 am"), timeslot("4:30 am", "6:00 am"), timeslot("7:15 am", "8:30 am"), timeslot("9:25 am", "10:00 am"), timeslot("10:10 am", "11:45 am"), timeslot("1:30 pm", "2:45 pm"), timeslot("3:15 pm", "3:45 pm"), timeslot("5:00 pm", "5:15 pm"), timeslot("9:10 pm", "9:11 pm"), timeslot("11:23 pm", "11:59 pm")]
+    testv = timeslotlist(listOfSlots)
+    print(testv.bestOption().time1)
