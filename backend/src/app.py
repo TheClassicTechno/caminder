@@ -1,11 +1,8 @@
 from flask import Flask, jsonify, request
-from logic import timeslot, timeslotlist
+import jsonpickle
+from logic import timeslot, timeslotlist, timeslotcontainer
 
 app = Flask(__name__)
-
-@app.route("/")
-def hello_world():
-    return "Hello world"
 
 @app.route("/", methods = ['POST'])
 def return_best_fit():
@@ -14,11 +11,14 @@ def return_best_fit():
     timeslots = []
     for item in req:
         if(type(item) != dict):
-            next
-        if(not item.has_key('start') or not item.has_key('end')):
-            next
+            return '', 400
+        if((not 'start' in item) or (not 'end' in item)):
+            return '', 400
         timeslots.append((item['start'], item['end']))
     freetimeslots = []
     for i in range(len(timeslots) - 1):
-        freetimeslots.append(timeslot())
-    return '', 200
+        freetimeslots.append(timeslot(timeslots[i][1], timeslots[i + 1][0]))
+    ftimeslotlist = timeslotlist(freetimeslots)
+    ret = ftimeslotlist.bestOption()
+    retfr = timeslotcontainer(str(ret.time1).split(" ")[1], str(ret.time2).split(" ")[1])
+    return jsonpickle.encode(retfr), 200

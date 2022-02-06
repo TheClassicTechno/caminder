@@ -1,4 +1,5 @@
 from datetime import datetime, timedelta
+from math import ceil
 
 NOON = datetime(1, 1, 1, 12, 0)
 
@@ -36,10 +37,15 @@ class timeslotlist():
         # sort by noonOffsetScore, then take top 1/3? and find longest, advise to spend that outside
         offsetRanks = sorted(self.timeslots, key=lambda x: x.noonOffset)
         topthirdranked = []
-        for i in range((len(offsetRanks)//3)):
+        for i in range((ceil(len(offsetRanks)/3))):
             topthirdranked.append(offsetRanks[i])
         finalRanks = sorted(topthirdranked, key=lambda x: x.duration)
         return finalRanks[0]
+
+class timeslotcontainer():
+    def __init__(self, start, finish):
+        self.start = start
+        self.finish = finish
 
 if(__name__ == '__main__'):
     listOfSlots = [timeslot("1:15 am", "2:45 am"), timeslot("4:30 am", "6:00 am"), timeslot("7:15 am", "8:30 am"), timeslot("9:25 am", "10:00 am"), timeslot("10:10 am", "11:45 am"), timeslot("1:30 pm", "2:45 pm"), timeslot("3:15 pm", "3:45 pm"), timeslot("5:00 pm", "5:15 pm"), timeslot("9:10 pm", "9:11 pm"), timeslot("11:23 pm", "11:59 pm")]
