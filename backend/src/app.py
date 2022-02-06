@@ -22,3 +22,5 @@ def return_best_fit():
     ret = ftimeslotlist.bestOption()
     retfr = timeslotcontainer(str(ret.time1).split(" ")[1], str(ret.time2).split(" ")[1])
     return jsonpickle.encode(retfr), 200
+
+app.run(host='0.0.0.0', port=8080)
